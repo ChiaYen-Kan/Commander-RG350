@@ -16,7 +16,7 @@
 #endif
 
 #ifndef FONTS
-#define FONTS {RES_DIR"Fiery_Turk.ttf",8},{RES_DIR"FreeSans.ttf",10},{RES_DIR"DroidSansFallback.ttf",9}
+#define FONTS {RES_DIR"Fiery_Turk.ttf",9},{RES_DIR"FreeSans.ttf",11},{RES_DIR"DroidSansFallback.ttf",11}
 #endif
 
 #ifndef SCREEN_WIDTH
@@ -56,7 +56,9 @@
 
 #define Y_LIST HEADER_H
 
-#define LINE_HEIGHT 15
+#define ICON_OFFSET 2
+
+#define LINE_HEIGHT 18
 #define NB_VISIBLE_LINES ((screen.h - FOOTER_H - HEADER_H - 1) / LINE_HEIGHT + 1)
 #define NB_FULLY_VISIBLE_LINES ((screen.h - FOOTER_H - HEADER_H) / LINE_HEIGHT)
 

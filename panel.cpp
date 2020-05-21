@@ -109,7 +109,7 @@ void CPanel::render(const bool p_active) const
             else
                 l_color = &Globals::g_colorTextNormal;
         }
-        SDL_utils::applySurface(m_x, l_y, l_surfaceTmp, Globals::g_screen);
+        SDL_utils::applySurface(m_x, l_y + ICON_OFFSET, l_surfaceTmp, Globals::g_screen);
         if (m_fileLister[l_i].is_symlink)
             SDL_utils::applySurface(m_x, l_y, m_iconIsSymlink, Globals::g_screen);
         // Text
